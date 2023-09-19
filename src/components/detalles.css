@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Archivo+Black&family=Roboto:wght@500&family=Rubik+Dirt&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Archivo+Black&family=Roboto+Mono:ital@1&family=Roboto:wght@500&family=Rubik+Dirt&display=swap');
+.contenedor{
+    background-color: #151515;
+    color: white;
+    min-width: 100%;
+    min-height: 100vh;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+
+}
+/* 
+.contenedor .sub-container{
+    background-color: #202020;
+} */
+.contenedor .sub-container .titulo{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+  
+  
+}
+.sub-container .titulo h1{
+    font-family: 'Archivo Black', sans-serif;
+}
+.sub-container .titulo p{
+    font-family: 'Archivo Black', sans-serif;
+}
+.sub-container .content-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    order: 2;
+	flex: 1;
+	padding: 25px 25px 25px 0;
+	height: 400px;
+}
+.sub-container .content-img .img-dev{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    /* width: 100%; */
+    
+    
+}
+.contenedor .listas{
+  padding: 40px 40px 60px 40px;
+  /* display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center; */
+}
+.listas ul,p{
+  list-style: none;
+  font-family:'Roboto', sans-serif ;
+
+}
+.listas li a{
+  text-decoration: none;
+  color: white;
+}
+.listas h4{
+  color: #403932 ;
+}
+.listas
+
+
+
+
+
+
+
+
+
+
+/* SPINNER */
+.spiner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    
+}
+.lds-spinner {
+    color: official;
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    height: 600px;
+  }
+  .lds-spinner div {
+    transform-origin: 40px 40px;
+    animation: lds-spinner 1.2s linear infinite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+  .lds-spinner div:after {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 3px;
+    left: 37px;
+    width: 6px;
+    height: 18px;
+    border-radius: 20%;
+    background: black;
+    display: flex;
+   
+  }
+  .lds-spinner div:nth-child(1) {
+    transform: rotate(0deg);
+    animation-delay: -1.1s;
+  }
+  .lds-spinner div:nth-child(2) {
+    transform: rotate(30deg);
+    animation-delay: -1s;
+  }
+  .lds-spinner div:nth-child(3) {
+    transform: rotate(60deg);
+    animation-delay: -0.9s;
+  }
+  .lds-spinner div:nth-child(4) {
+    transform: rotate(90deg);
+    animation-delay: -0.8s;
+  }
+  .lds-spinner div:nth-child(5) {
+    transform: rotate(120deg);
+    animation-delay: -0.7s;
+  }
+  .lds-spinner div:nth-child(6) {
+    transform: rotate(150deg);
+    animation-delay: -0.6s;
+  }
+  .lds-spinner div:nth-child(7) {
+    transform: rotate(180deg);
+    animation-delay: -0.5s;
+  }
+  .lds-spinner div:nth-child(8) {
+    transform: rotate(210deg);
+    animation-delay: -0.4s;
+  }
+  .lds-spinner div:nth-child(9) {
+    transform: rotate(240deg);
+    animation-delay: -0.3s;
+  }
+  .lds-spinner div:nth-child(10) {
+    transform: rotate(270deg);
+    animation-delay: -0.2s;
+  }
+  .lds-spinner div:nth-child(11) {
+    transform: rotate(300deg);
+    animation-delay: -0.1s;
+  }
+  .lds-spinner div:nth-child(12) {
+    transform: rotate(330deg);
+    animation-delay: 0s;
+  }
+  @keyframes lds-spinner {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+@media screen and (max-width:700px) {
+  .sub-container .content-img .img-dev{
+    max-width: 100%;
+    height: auto;
+  }
+}

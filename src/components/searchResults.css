@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+.listo a{
+    text-decoration: none;
+}
+.contenido{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    min-height: 100vh;
+    flex-wrap: wrap;
+    gap: 10px;
+    background-color: #151515;
+    
+   
+    
+}
+.contenido a{
+    text-decoration: none;
+}
+
+.contenido .card-contenedor{
+    position: relative;
+    min-width: 320px;
+    height: 400px;
+    background-color: #202020;
+    color: white; 
+    overflow: hidden;
+}
+.card-sub ul {
+    list-style: none;
+    padding: 0;
+    display: flex; /* Muestra los elementos en una fila */
+    gap: 10px; 
+    /* Espacio entre los elementos */
+    overflow: hidden;
+    flex-wrap: wrap;
+  }
+  .card-sub h5{
+    font-family: 'Roboto', sans-serif;
+
+}
+.card-contenedor .card-sub ul li{
+    list-style: none;
+    display: flex;
+}
